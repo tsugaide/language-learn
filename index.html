@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LanguageLearn</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="max-md:fixed max-md:w-full max-md:top-0 max-md:z-50 flex flex-row justify-between items-center mx-6 my-3 max-md:flex-col max-md:items-start max-md:my-0 max-md:mx-0"
+    >
+      <h1
+        class="font-bold text-xl max-md:bg-white max-md:w-full max-md:p-4 max-md:z-50 max-md:relative"
+      >
+        LangaugeLearn
+      </h1>
+      <div class="max-md:w-full max-md:relative">
+        <ul
+          id="ul"
+          class="max-md:transition-all flex flex-row gap-8 text-sm font-medium mx-6 text-gray-700 max-md:w-full max-md:translate-y-[-100%] max-md:text-white max-md:text-base max-md:flex-col max-md:gap-4 max-md:mx-0 max-md:p-5 max-md:bg-blue-800 max-md:z-10 max-md:absolute"
+        >
+          <li><a href="#home" class="hover:text-blue-700">Tentang Kami</a></li>
+          <li><a href="#about" class="hover:text-blue-700">Kursus</a></li>
+          <li><a href="#contact" class="hover:text-blue-700">Kontak</a></li>
+          <li><a href="#kursus" class="hover:text-blue-700">Kursus</a></li>
+        </ul>
+        <div
+          onclick="navIcon(this)"
+          class="absolute right-4 z-50 bottom-[50%] translate-y-[-50%] md:hidden"
+        >
+          <svg
+            id="menu"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="w-5"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="pb-9 rounded-3xl bg-no-repeat bg-center max-md:mt-20"
+      style="background-image: url(/tools/img/heroIMG.png)"
+      id="home"
+    >
+      <div
+        data-aos="zoom-in"
+        class="text-center text-8xl max-md:text-6xl font-bold pt-20 text-blue-800"
+      >
+        <h1>Language</h1>
+        <h1>Learn</h1>
+      </div>
+      <div class="text-center mt-16" data-aos="zoom-in">
+        <h1
+          class="text-5xl mx-10 max-lg:text-3xl max-lg:mx-10 max-md:text-2xl max-md:mx-2 font-bold text-white"
+        >
+          Belajar bahasa asing dengan cara yang menyenangakan!!
+        </h1>
+        <a
+          href="#contact"
+          class="hover:bg-blue-900 transition inline-block bg-blue-800 p-3 max-md:p-2 mt-9 rounded-full text-white font-bold max-md:font-semibold"
+        >
+          Mulai Belajar
+        </a>
+      </div>
+    </section>
+    <section class="mt-16" id="about">
+      <div data-aos="fade-down">
+        <h1 class="text-xl font-bold text-orange-500 text-center md:text-3xl">
+          Apa itu LanguageLearn ?
+        </h1>
+        <p class="text-center mx-9 text-wrap mt-3 md:mx-36">
+          LangaugeLearn adalah sebuah platform yang membantu mereka yang ingin
+          belajar bahasa asing. Kami menyediakan kursus gratis dan berbayar yang
+          dapat membantu mereka belajar lebih cepat dan mudah. Kaami terssedia
+          untuk kursus offline dan online
+        </p>
+      </div>
+      <div class="mt-5 md:flex">
+        <div
+          data-aos="fade-right"
+          class="flex justify-center cursor-default md:flex-1 md:justify-end"
+        >
+          <img src="/tools/img/aboutIMG.png" alt="" width="70%" />
+        </div>
+        <div class="mx-9 -mt-5 md:flex-1 md:mt-7" data-aos="fade-left">
+          <h1 class="font-bold text-2xl text-pink-700">Keunggulan</h1>
+          <div class="mt-3 ml-2 flex flex-col gap-3">
+            <div class="flex gap-2">
+              <div class="w-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="hover:fill-blue-800 transition-all"
+                >
+                  <path
+                    d="M160 64c0-35.3 28.7-64 64-64L576 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-239.2 0c-11.8-25.5-29.9-47.5-52.4-64l99.6 0 0-32c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 32 64 0 0-288L224 64l0 49.1C205.2 102.2 183.3 96 160 96l0-32zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352l53.3 0C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7L26.7 512C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold">Guru Profesional</div>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="hover:fill-pink-700 transition-all"
+                >
+                  <path
+                    d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold">Pembelajaran Fleksibel</div>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="hover:fill-blue-800 transition-all"
+                >
+                  <path
+                    d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5l0-377.4c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8L0 454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5l0-370.3c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11L304 456c0 11.4 11.7 19.3 22.4 15.5z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold">Materi Up-To-Date</div>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-7">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="hover:fill-orange-600 transition-all"
+                >
+                  <path
+                    d="M512 80c8.8 0 16 7.2 16 16l0 32L48 128l0-32c0-8.8 7.2-16 16-16l448 0zm16 144l0 192c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16l0-192 480 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold">Harga Terjangkau</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-blue-800 py-5 mt-7 rounded-lg" id="kursus">
+      <h1 class="mx-7 text-lg font-bold md:text-2xl">Pilihan Bahasa</h1>
+      <h1
+        class="mx-7 text-2xl font-semibold text-white my-3 md:text-4xl md:font-bold"
+      >
+        Pilih Bahasa yang kamu minati, terdapat lebih dari 6 Bahasa
+      </h1>
+      <div
+        class="flex justify-start mt-10 gap-3 mx-2 rounded-2xl overflow-x-scroll snap-x snap-mandatory md:mx-28"
+        style="scrollbar-width: none"
+      >
+        <div
+          class="inline-block bg-white py-5 px-6 rounded-3xl flex-shrink-0 snap-start"
+        >
+          <div class="relative">
+            <img
+              src="/tools/img/ing.png"
+              alt=""
+              class="w-48 aspect-square rounded-xl"
+            />
+            <div
+              class="bg-blue-800 inline-block px-1 rounded-md absolute bottom-4 left-2"
+            >
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="w-3 fill-yellow-500"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <h1 class="font-bold text-white text-sm">4.5</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h1 class="text-2xl font-bold">Bahasa Inggris</h1>
+            <div
+              class="flex gap-3 pb-5"
+              style="border-bottom: 2px solid rgb(165, 165, 165)"
+            >
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="w-3 fill-blue-800"
+                >
+                  <path
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                  />
+                </svg>
+                <h1 class="text-xs text-blue-800 font-semibold">200 siswa</h1>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-2 fill-blue-800"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <h1 class="text-xs font-semibold text-blue-800">20 Kelas</h1>
+              </div>
+            </div>
+            <h1 class="text-center font-bold">Rp150.000/Bulan</h1>
+          </div>
+        </div>
+        <div
+          class="inline-block bg-white py-5 px-6 rounded-3xl flex-shrink-0 snap-start"
+        >
+          <div class="relative">
+            <img
+              src="/tools/img/ing.png"
+              alt=""
+              class="w-48 aspect-square rounded-xl"
+            />
+            <div
+              class="bg-blue-800 inline-block px-1 rounded-md absolute bottom-4 left-2"
+            >
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="w-3 fill-yellow-500"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <h1 class="font-bold text-white text-sm">4.4</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h1 class="text-2xl font-bold">Bahasa Jerman</h1>
+            <div
+              class="flex gap-3 pb-5"
+              style="border-bottom: 2px solid rgb(165, 165, 165)"
+            >
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="w-3 fill-blue-800"
+                >
+                  <path
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                  />
+                </svg>
+                <h1 class="text-xs text-blue-800 font-semibold">200 siswa</h1>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-2 fill-blue-800"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <h1 class="text-xs font-semibold text-blue-800">25 Kelas</h1>
+              </div>
+            </div>
+            <h1 class="text-center font-bold">Rp400.000/Bulan</h1>
+          </div>
+        </div>
+        <div
+          class="inline-block bg-white py-5 px-6 rounded-3xl flex-shrink-0 snap-start"
+        >
+          <div class="relative">
+            <img
+              src="/tools/img/ing.png"
+              alt=""
+              class="w-48 aspect-square rounded-xl"
+            />
+            <div
+              class="bg-blue-800 inline-block px-1 rounded-md absolute bottom-4 left-2"
+            >
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="w-3 fill-yellow-500"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <h1 class="font-bold text-white text-sm">4.7</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h1 class="text-2xl font-bold">Bahasa Jepang</h1>
+            <div
+              class="flex gap-3 pb-5"
+              style="border-bottom: 2px solid rgb(165, 165, 165)"
+            >
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="w-3 fill-blue-800"
+                >
+                  <path
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                  />
+                </svg>
+                <h1 class="text-xs text-blue-800 font-semibold">300 siswa</h1>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-2 fill-blue-800"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <h1 class="text-xs font-semibold text-blue-800">30 Kelas</h1>
+              </div>
+            </div>
+            <h1 class="text-center font-bold">Rp250.000/Bulan</h1>
+          </div>
+        </div>
+        <div
+          class="inline-block bg-white py-5 px-6 rounded-3xl flex-shrink-0 snap-start"
+        >
+          <div class="relative">
+            <img
+              src="/tools/img/ing.png"
+              alt=""
+              class="w-48 aspect-square rounded-xl"
+            />
+            <div
+              class="bg-blue-800 inline-block px-1 rounded-md absolute bottom-4 left-2"
+            >
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="w-3 fill-yellow-500"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <h1 class="font-bold text-white text-sm">4.4</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h1 class="text-2xl font-bold">Bahasa Spanyol</h1>
+            <div
+              class="flex gap-3 pb-5"
+              style="border-bottom: 2px solid rgb(165, 165, 165)"
+            >
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="w-3 fill-blue-800"
+                >
+                  <path
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                  />
+                </svg>
+                <h1 class="text-xs text-blue-800 font-semibold">150 siswa</h1>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-2 fill-blue-800"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <h1 class="text-xs font-semibold text-blue-800">20 Kelas</h1>
+              </div>
+            </div>
+            <h1 class="text-center font-bold">Rp100.000/Bulan</h1>
+          </div>
+        </div>
+        <div
+          class="inline-block bg-white py-5 px-6 rounded-3xl flex-shrink-0 snap-start"
+        >
+          <div class="relative">
+            <img
+              src="/tools/img/ing.png"
+              alt=""
+              class="w-48 aspect-square rounded-xl"
+            />
+            <div
+              class="bg-blue-800 inline-block px-1 rounded-md absolute bottom-4 left-2"
+            >
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="w-3 fill-yellow-500"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <h1 class="font-bold text-white text-sm">4.3</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h1 class="text-2xl font-bold">Bahasa Italia</h1>
+            <div
+              class="flex gap-3 pb-5"
+              style="border-bottom: 2px solid rgb(165, 165, 165)"
+            >
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  class="w-3 fill-blue-800"
+                >
+                  <path
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                  />
+                </svg>
+                <h1 class="text-xs text-blue-800 font-semibold">100 siswa</h1>
+              </div>
+              <div class="flex gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-2 fill-blue-800"
+                >
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <h1 class="text-xs font-semibold text-blue-800">20 Kelas</h1>
+              </div>
+            </div>
+            <h1 class="text-center font-bold">Rp100.000/Bulan</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-7">
+      <h1 class="text-center text-2xl text-pink-700 font-bold md:text-4xl">
+        Review dari siswa kami
+      </h1>
+      <div class="flex flex-wrap gap-8 items-center my-9 mx-8">
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="shadow-2xl p-3 pl-6 w-96 rounded-3xl flex-grow max-sm:hover:-ml-3 md:hover:-mt-5 transition-all"
+        >
+          <div class="flex items-center gap-3">
+            <img src="/tools/img/ing.png" alt="" class="w-16 rounded-full" />
+            <h1 class="font-bold text-lg">Joni</h1>
+          </div>
+          <p class="mt-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-blue-800 rounded-lg py-5" id="contact">
+      <h1 class="text-center font-bold text-xl text-white">
+        Sudah siap untuk belajar?
+      </h1>
+      <h1 class="text-center mx-2 font-bold text-2xl text-orange-500">
+        Daftarkan dirimu sekarang dan dapatkan kelas gratis untuk pertama kali!!
+      </h1>
+      <div class="md:flex md:flex-row-reverse md:gap-8">
+        <div class="flex justify-center mx-3 md:mr-8">
+          <form action="" class="inline-block bg-white my-8 p-5 rounded-lg">
+            <label for="" class="font-bold">Nama Lengkap</label>
+            <input
+              type="text"
+              placeholder="Ketik Nama Lengkap"
+              class="p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none"
+            />
+            <label for="" class="font-bold inline-block mt-5"
+              >Nomor Handphone</label
+            >
+            <input
+              placeholder="Ketik Nomor Handphone "
+              class="p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none"
+            />
+            <h1 class="font-bold my-4">Pilih Bahasa :</h1>
+            <div class="flex flex-wrap gap-2">
+              <div class="flex items-center gap-1 flex-grow">
+                <input type="checkbox" />
+                <label for="">Bahasa Inggris</label>
+              </div>
+              <div class="flex items-center gap-1 flex-grow">
+                <input type="checkbox" />
+                <label for="">Bahasa Jepang</label>
+              </div>
+              <div class="flex items-center gap-1 flex-grow">
+                <input type="checkbox" />
+                <label for="">Bahasa Jerman</label>
+              </div>
+              <div class="flex items-center gap-1 flex-grow">
+                <input type="checkbox" />
+                <label for="">Bahasa Italia</label>
+              </div>
+              <div class="flex items-center gap-1 flex-grow">
+                <input type="checkbox" />
+                <label for="">Bahasa Spanyol</label>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="bg-orange-500 text-white p-2 w-full rounded-lg mt-3 hover:bg-orange-600 transition-all"
+            >
+              Daftar
+            </button>
+          </form>
+        </div>
+        <div class="mx-4 md:mt-10">
+          <h1 class="font-bold text-2xl text-center text-orange-500">
+            Kontak Kami
+          </h1>
+          <h1 class="text-white text-center">
+            Kamu juga bisa daftarkan diri kamu lewat kontak kami di bawah ini
+          </h1>
+          <div class="ml-4 mt-5 flex flex-col gap-2 md:gap-3 md:mt-7">
+            <div class="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="fill-white w-4"
+              >
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                />
+              </svg>
+              <h1 class="text-white">Jl xxxx no x, Kec xx, Kab xx, Prov xx</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="fill-white w-4"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+              <h1 class="text-white">LearnLabguage23@gmail.com</h1>
+            </div>
+            <div class="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="fill-white w-4"
+              >
+                <path
+                  d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"
+                />
+              </svg>
+              <h1 class="text-white">089812345678</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/tools/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
