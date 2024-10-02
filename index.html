@@ -6,10 +6,63 @@
     <title>LanguageLearn</title>
     <link rel="stylesheet" href="output.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body class="overflow-x-hidden">
+    <nav
+      class="p-5 bg-white fixed top-0 z-50 w-full shadow md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold cursor-pointer"> LanguageLearn </span>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        id="ul"
+        class="md:flex md:items-center md:z-auto md:static absolute bg-blue-700 left-0 w-full z-10 opacity-0 md:bg-white md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 transition-all ease-in duration-200"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#home"
+            class="text-lg font-semibold hover:text-cyan-500 duration-500"
+            >Home</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#about"
+            class="text-lg font-semibold hover:text-cyan-500 duration-500"
+            >Tentang Kami</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#kursus"
+            class="text-lg font-semibold hover:text-cyan-500 duration-500"
+            >Kursus</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#contact"
+            class="text-lg font-semibold hover:text-cyan-500 duration-500"
+            >Kontak</a
+          >
+        </li>
+      </ul>
+    </nav>
     <section
-      class="pb-9 rounded-3xl bg-no-repeat bg-center max-md:mt-20 overflow-x-hidden mt-5"
+      class="pb-9 rounded-3xl bg-no-repeat bg-center mt-24 w-full"
       style="background-image: url(tools/img/heroIMG.png)"
       id="home"
     >
@@ -34,8 +87,7 @@
         </a>
       </div>
     </section>
-
-    <section class="mt-16" id="about">
+    <section class="mt-16 overflow-x-hidden" id="about">
       <div data-aos="fade-down">
         <h1 class="text-xl font-bold text-orange-500 text-center md:text-3xl">
           Apa itu LanguageLearn ?
